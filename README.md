@@ -9,7 +9,7 @@
 
 함수 : camelCase
 
-변수/프로퍼티 : sname_case
+변수/프로퍼티 : snake_case
 
 
 ※리뷰용 코드로 실행은 안됩니다.
