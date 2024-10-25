@@ -1,6 +1,8 @@
 from Mapper import AbstractMapper
 from Mapper import _MapperRegistry
 
+from Domain import Track
+
 class TrackMapper(AbstractMapper):
     def __init__(self, gateway):
         super().__init__(gateway)
@@ -19,6 +21,9 @@ class TrackMapper(AbstractMapper):
         for row in rows:
             result.append(self.load(row))
         return result
+
+    def createDomainObject(self, data_row):
+        return Track()
     #endregion
 
     #region 2. Update
